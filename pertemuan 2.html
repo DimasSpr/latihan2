@@ -23,8 +23,8 @@
                 <img src="neymar.jpeg" alt="">
             </div>
             <div class="isi">
-                <h1> Dimas Saputra</h1>
-                <h5> Mahasiswa</h5>
+                <h1 id="nama"></h1>
+                <h5 id="role"></h5>
                    <a href="#" class="btn-1">Kontak</a>
                    <a href="#" class="btn-2">Resume</a>
             </div>
@@ -37,34 +37,62 @@
     
             </div>
             <div class="isi3">
-                <p>Full Time</p>
-                <p>21</p>
-                <p>Purwokerto</p>
-                <p>Kerja Kelompok</p>
-                <p>Email@gmail.com</p>
+                <p id="isiAvailability"></p>
+                <p id="isiusia"></p>
+                <p id="isilokasi"></p>
+                <p id="isipengalaman"></p>
+                <p id="isiemail"></p>
     
             </div>
         </div>
 
         <div class="form">
-            <p>Nama</p>
-            <input type="text">
-            <p>Role</p>
-            <input type="text">
-            <p>Availability</p>
-            <input type="text">
-            <p>Usia</p>
-            <input type="text">
+            <p >Nama</p>
+            <input id="namaForm" type="text">
+            <p >Role</p>
+            <input id="roleForm" type="text">
+            <p >Availability</p>
+            <input id="AvailabilityForm" type="text">
+            <p >Usia</p>
+            <input id="usiaForm" type="text">
             <p>Lokasi</p>
-            <input type="text">
-            <p>Pengalaman</p>
-            <input type="text">
-            <p>Email</p>
-            <input type="text">
-            <button type="button">Submit</button>
+            <input  id="lokasiForm" type="text">
+            <p >Pengalaman</p>
+            <input id="pengalamanForm" type="text">
+            <p >Email</p>
+            <input id="emailForm" type="text">
+            <button onclick="myFuntion()">Submit</button>
         </div>
         
-            
+            <script>
+                function myFuntion() {
+                    let namaForm = document.querySelector("#namaForm");
+                    let nama = document.querySelector("#nama");
+                    let roleForm = document.querySelector("#roleForm");
+                    let role = document.querySelector("#role");
+                    let AvailabilityForm = document.querySelector("#AvailabilityForm");
+                    let isiAvailability = document.querySelector("#isiAvailability");
+                    let usiaForm = document.querySelector("#usiaForm");
+                    let isiusia = document.querySelector("#isiusia");
+                    let lokasiForm = document.querySelector("#lokasiForm");
+                    let isilokasi= document.querySelector("#isilokasi");
+                    let pengalamanForm= document.querySelector("#pengalamanForm");
+                    let isipengalaman= document.querySelector("#isipengalaman");
+                    let emailForm = document.querySelector("#emailForm");
+                    let isiemail = document.querySelector("#isiemail");
+
+                    nama.innerHTML = namaForm.value;
+                    role.innerHTML = roleForm.value;
+                    isiAvailability.innerHTML = AvailabilityForm.value;
+                    isiusia.innerHTML = usiaForm.value;
+                    isilokasi.innerHTML = lokasiForm.value;
+                    isipengalaman.innerHTML = pengalamanForm.value;
+                    isiemail.innerHTML = emailForm.value;
+                    
+                    
+
+                }
+            </script>
        
     </div>
 </body>

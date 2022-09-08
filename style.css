@@ -128,14 +128,14 @@ input {
     border: 1px solid #C8C2BC;
 }
 
-button {
+button{
+    background-color: blue;
+    margin-top: 10px;
+    outline: none;
+    border-color: white;
+    border-radius: 10px;
+    text-align: center;
     height: 30px;
     width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    color: white;
-    background-color: darkgreen;
-    border: 1px solid white;
+    color:white;
 }
-
-
